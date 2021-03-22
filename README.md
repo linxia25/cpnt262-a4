@@ -26,31 +26,46 @@ A website for online sales of high-end furniture!
 - Heroku URL: https://cpnt262a4.herokuapp.com/
 
 ## File/directory
-project-root
-└─ data
-   └─ gallery.js (or similar)    
-└─ public
-   ├─ css
-   ├─ images
-   └─ js
-└─ routes
-   └─ api
-      └─ v0.js
-   └─ index.js
-└─ views
-   └─ partials
-      ├─ footer.ejs
-      ├─ header.ejs
-      └─ nav.ejs
-   └─ pages
-      └─ index.ejs
-      ├─ login.ejs
-      └─ register.ejs
-├─ package-lock.json
-├─ package.json
-└─ server.js
-└─ env.tet
-└─ README.md
+- /public
+- /css
+--- /style.css
+--- /index.css
+--- /login.css
+--- /register.css
+--- /reset.css
+- /images
+--- /accent-table.jpg
+--- /chair.jpg
+--- /bed.jpg
+--- /sofa.jpg
+--- /sofa-bed.jpg
+--- /table.jpg
+---/malm-dresser.jpg
+---/shelves.jpg
+---/wooden-table.jpg
+---/logo.png
+- /js
+---/client.js
+- /routes
+--- /api
+  --- /v0.js
+--- index.js
+- /views
+--- /pages
+  --- index.ejs
+  --- login.ejs
+  --- register.ejs
+--- /partials
+  --- /footer.ejs
+  --- /header.ejs
+  --- /nav.ejs
+- /.env.text
+- /.gitignore.txt
+- /config.js
+- /package-lock.json
+- /package.json
+- /server.js
+- /README.md
 
 
 ## License
