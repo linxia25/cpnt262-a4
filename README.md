@@ -4,9 +4,6 @@ By Xia Lin March 19, 2021
 ## Description
 A website for online sales of high-end furniture!
 
-## Comments
-- 
-
 ## Attributions
 - [Logo.jpg](https://www.designevo.com/ "Logo") by DesignEvo.
 - [bed.jpg](https://www.pexels.com/photo/brown-wooden-bed-inside-bedroom-3773575/ "bed") by Curtis Adams.
