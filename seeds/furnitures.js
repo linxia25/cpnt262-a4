@@ -1,4 +1,4 @@
-const furnitures = [
+module.exports = [
   // for each object: add id, title, description, width, height, pathURL, linkURL, credit, creditURL
     {
       id:         1350789,
@@ -110,5 +110,3 @@ const furnitures = [
     },
 
   ];
-
-  module.exports = furnitures;

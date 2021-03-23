@@ -1,23 +1,18 @@
 // Load dependencies
+const mongoose = require('./_connection.js') ;
 const path = require('path');
 const dotenv = require('dotenv').config()
 const express = require('express');
-const cors = require('cors');
-
-//Load route as a separate module
-const api = require('./routes/api/v0');
-
-//Require index module
 const index = require('./routes/index');
+const furnitures = require('./routes/furnitures');
+const api = require('./routes/api/v0');
+const pages = require('./routes/index');
 
 // Create express app
 const app = express();
 
-//Allow cross http
-app.use(cors());
 
 app.use('/api/v0', api);
-
 
 // Create view engine
 app.set('view engine', 'ejs');
@@ -25,11 +20,12 @@ app.set('view engine', 'ejs');
 // Set all files in the public folder as static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/',index)
+app.use('/', pages);
+app.use('/furnitures', furnitures);
 
 app.use(function(req, res) {
   res.status(404);
-  res.send('404: File Not Found');
+  res.render('pages/404', {pageTitle: "Smile Furnitures"});
 });
 
 // Set port preferrence with default
